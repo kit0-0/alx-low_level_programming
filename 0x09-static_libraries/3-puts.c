@@ -1,18 +1,19 @@
 #include "main.h"
-
 #include <stdio.h>
 
-#include <stdlib.h>
-
-#include <ctype.h>
-
-#include <string.h>
-
-
-void _puts(char *s)
-
+/**
+* _puts - prints a string
+* @str: str pointer
+*
+* Return: 0
+*/
+void _puts(char *str)
 {
-
-   puts(s);
-
+int i = 0;
+while (str[i] != '\0')
+{
+putchar(str[i]);
+i++;
+}
+putchar('\n');
 }
